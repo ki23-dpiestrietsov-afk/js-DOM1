@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <h1 class="title">Калькулятор</h1>
+      <p class="subtitle">Введи два числа і обери дію</p>
+
+      <div class="grid">
+        <label class="field">
+          <span class="label">Число 1</span>
+          <input id="a" class="input" type="text" inputmode="decimal" placeholder="Напр. 12.5">
+        </label>
+
+        <label class="field">
+          <span class="label">Число 2</span>
+          <input id="b" class="input" type="text" inputmode="decimal" placeholder="Напр. 3">
+        </label>
+      </div>
+
+      <div class="actions">
+        <button class="btn" data-op="add" type="button">+</button>
+        <button class="btn" data-op="sub" type="button">−</button>
+        <button class="btn" data-op="mul" type="button">×</button>
+        <button class="btn" data-op="div" type="button">÷</button>
+        <button class="btn btn-ghost" id="clearBtn" type="button">Очистити</button>
+      </div>
+
+      <div class="result">
+        <div class="result-row">
+          <span class="result-label">Результат:</span>
+          <span id="resultValue" class="result-value">—</span>
+        </div>
+        <p id="message" class="message" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
